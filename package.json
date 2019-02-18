@@ -20,7 +20,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "esw . && prettier --check components/**/*.js && prettier --check pages/**/*.js && jest --no-cache --coverage"
+      "pre-commit": "esw . && prettier --check components/**/*.js && prettier --check pages/**/*.js",
+      "pre-push": "jest --no-cache --coverage"
     }
   },
   "jest": {
